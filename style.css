@@ -16,7 +16,10 @@ body{
     width: 100%;
     min-height: 100vh;
     background-color: #FAF4ED;
+    overflow: hidden;
 }
+
+/* NAV */
 
 nav{
     display: flex;
@@ -24,7 +27,7 @@ nav{
     justify-content: space-around;
     height: 70px;
     line-height: 70px;
-    z-index: 100;
+    z-index: 300;
     background-color: #303538;
 }
 
@@ -79,35 +82,114 @@ b{
     color: #367295;
 }
 
+/* HOME */
+
 .home{
     display: flex;
     width: 100%;
     height: 100%;
     flex-direction: row;
-    padding: 2% 7.5%;
     overflow: hidden;
 }
 
 .boxl{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-left: 7.5%;
+    width: 60%;
     font-family: 'Josefin Sans', sans-serif;
     color: #303538;
 }
 
 .boxr{
+    position: relative;
+    overflow: hidden;
     width: 50%;
-    padding-left: 16%;
-    padding-top: 30px;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
+    height: 500px;
+}
+
+.boxr img{
+    position: absolute;
+    width: 700px;
+    margin-top: -100px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.panel{
+    position: absolute;
+    background-color: #E6E0DA;
+    margin-top: 120px;
+    width: 400px;
+    height: 220px;
+    z-index: 3;
+    border-radius: 5px;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+.panel h1{
+    font-family: 'Inter', sans-serif;
+    margin: 30px 30px;
+    text-align: center;
+    color: #303538;
+}
+
+.panel p{
+    margin-top: -30px;
+    margin-left: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #303538;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 50px 0 50px;
+}
+
+.buttons div:hover{
+    filter: invert(70%);
+}
+
+.download{
+    outline: 4px solid #367295;
+    width: 130px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.download img{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    filter: saturate(60%);
+}
+
+.preview{
+    outline: 4px solid #303538;
+    padding-top: 10px;
+    width: 130px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.preview span{
+    margin-left: 20%;
+    margin-top: 20%;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    color: #303538;
 }
 
 span{
+    width: 100px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 40px;
     font-weight: 800;
-    margin-bottom: -5em;
 }
 
 h1{
@@ -126,6 +208,12 @@ p{
     text-align: justify;
     font-size: 22px;
     padding-right: 10%;
+}
+
+.section{
+    background-color: #303538;
+    width: 100%;
+    height: 500px;
 }
 
 .footer{
@@ -155,7 +243,13 @@ p{
     bottom: 0;
 }
 
-  @media (max-width: 767px) {
+@media (max-width: 1251px) {
+    span{
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 767px) {
   * {
     margin: 0;
     padding: 0;
