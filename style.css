@@ -138,6 +138,7 @@ b{
 .panel p{
     margin-top: -30px;
     margin-left: 20px;
+    margin-right: -20px;
     font-size: 14px;
     text-align: center;
     color: #303538;
@@ -241,13 +242,14 @@ p{
     display: flex;
     flex-direction: column;
     width: 50%;
-    /*margin-top: -52px;*/
-    margin: 0px 0 0 80px;
+    margin-left: 80px;
     height: fill;
 }
 
 .sobre h1{
     align-self: center;
+    text-align: center;
+    margin-right: 57px;
 }
 
 .competencias{
@@ -277,6 +279,71 @@ p{
     font-size: 18px;
 }
 
+.contato{
+    padding: 50px 50px 0 90px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.contact-list{
+    width: 50%;
+}
+
+.contact-list h1{
+    margin-top: 1px;
+    color: #303538;
+    font-size: 36px;
+}
+
+.contact-list ul{
+    margin-top: 30px;
+    list-style: none;
+}
+
+.contact-list ul li{
+    color: #303538;
+    line-height: 80px;
+    font-size: 22px;
+}
+
+.contact-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #367295;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
 .footer{
     display: flex;
     flex-direction: row;
@@ -303,6 +370,9 @@ p{
     filter: contrast(65%);
     bottom: 0;
 }
+
+
+
 
 @media (max-width: 1251px) {
     span{
